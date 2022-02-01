@@ -3,11 +3,10 @@
 
 def store_plugin_data():
 	print('plugin param storage')
-	plug_param_gen(plugins.getParamCount(channels.selectedChannel()), )
 	plug_dict = {}
 	count = plugins.getParamCount(channels.selectedChannel())
 	store = []
-	num_list = [i for i in range(0, count + 1)
+	num_list = [i for i in range(0, count + 1)]
 		    
 	for i in range(count):
 		name = plugins.getParamName(i, channels.selectedChannel())
